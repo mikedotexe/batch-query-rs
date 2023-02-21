@@ -1,0 +1,18 @@
+[package]
+name = "batch-query-rs"
+version = "0.1.0"
+edition = "2021"
+authors = ["Mike Purvis @mikedotexe"]
+
+[dependencies]
+cosmrs = { version = "0.11.0", features = ["rpc", "cosmwasm", "grpc"] }
+croncat-sdk-factory = "0.1.1"
+croncat-sdk-tasks = "0.1.1"
+croncat-sdk-manager = "0.1.1"
+croncat-sdk-agents = "0.1.1"
+tokio = { version = "1.20.1", features = ["full", "macros"]}
+serde = { version = "1.0", default-features = false, features = ["derive"] }
+serde_json = "1.0"
+tendermint-rpc = "0.29.0"
+reqwest = { version = "0.11.14", features = ["json"] }
+eyre = "0.6.8"
